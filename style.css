@@ -1,0 +1,222 @@
+*{
+    /* border: 1px solid red; */
+}
+
+@font-face {
+    font-family: Rocky ;
+    src: url(font/rocky.regular.ttf);
+}
+
+@font-face {
+    font-family: Sharp;
+    src: url(font/Sharpshooter.ttf);
+}
+
+
+body{
+    margin:0;
+    padding:0;
+    background-color: #2e565f;
+    color:#D2F2FBff;
+    font-family: Rocky;
+}
+
+h1,h2, h3, h4, h5, h6{
+    margin:0;
+    padding:0;
+}
+
+
+
+.nav-container{
+    position:fixed;
+    margin-top:0;
+    z-index:2;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #2e565f;
+    color:#D2F2FBff;
+    align-items: center;
+    width:100%;
+
+}
+
+.nav-brand{
+    margin-left: 5%;
+    width:20%;
+}
+
+
+.nav-menu{
+    width:100%;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    margin:10px 0;
+}
+
+a{
+    text-decoration: none;
+    color:#D2F2FBff;
+    text-shadow: 0 0 5px black;;
+}
+
+a:hover{
+    color:rgb(100, 100, 245);
+
+}
+
+
+
+.main-img{
+    background-image: url(photos/Main-page/hero/pull-up.jpg);
+    width:100%;
+    height:700px;
+    background-size: cover;
+    text-align:center;
+    padding:300px;
+}
+
+
+.title{
+    color:#D2F2FBff;
+    margin:50px 0 20px 0;
+    text-shadow:0 0 5px black;
+    text-align:center;
+
+}
+
+.img-section{
+    display:flex;
+    justify-content: center;
+    margin-bottom:3%;
+}
+
+.img{
+    width:100%;
+}
+
+.img-info{
+    width:100%;
+    height:400px;
+    object-fit: cover;
+}
+
+.info{
+    padding:10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#about-img{
+    padding-top:15%;
+    margin-left:5%;
+    
+}
+
+.about-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.equitment-title{
+    text-align: center;
+    font-size:24px;
+    margin-top:3%;
+}
+
+.about-text{
+    padding:10% 3% 0 5%;
+    text-align: center;
+}
+
+.testamonials{
+    margin:2% 5% 10% 5%;
+    display:grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, auto);
+
+    grid-column-gap: 3%;
+    grid-row-gap:1%;
+
+}
+
+
+@media screen and (width<700px){
+
+.testamonials{
+    background-color: green;
+    margin-bottom:30%;
+}
+}
+
+@media screen and (width<500px){
+    .testamonials{
+        background-color: yellow;
+        margin-bottom:50%;
+    }
+}
+@media screen and (width<400px){
+    .testamonials{
+        background-color: red;
+        margin-bottom:100%;
+    }
+}
+@media screen and (width<200px){
+    .testamonials{
+        background-color: red;
+        margin-bottom:200%;
+    }
+}
+
+.img-about{
+    width:100%;
+    height:600px;
+    object-fit: cover;
+}
+
+.text-section{
+    text-align: center;
+    margin-top:10%;
+
+}
+
+#testamonials-title{
+    margin-top:2%;
+    text-align: center;
+}
+
+footer{
+    background-color: #09323b;
+    color:#D2F2FBff;
+    padding:0px;
+    margin:0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.footer-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    padding-top:2%;
+   
+}
+
+
+
+.footer-head{
+    font-size:32px;
+}
+
+.tiny{
+    font-size:24px;
+}
+
